@@ -1,5 +1,5 @@
 BasedOnStyle: Google
-IndentWidth: 2
+IndentWidth: 4
 TabWidth: 2
 UseTab: Never
 ColumnLimit: 80
@@ -9,5 +9,5 @@ SpacesInParentheses: false
 SpacesInAngles: false
 SpaceAfterCStyleCast: false
 DerivePointerAlignment: false
-PointerAlignment: Left
+PointerAlignment: Right
 SortIncludes: false
