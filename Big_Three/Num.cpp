@@ -13,15 +13,37 @@ Num::Num(double initialValue)
 {
     valuePtr = new double;
     *valuePtr = initialValue;
+
 }
 
 //copy constructor
 //allows for a deep copy
 Num::Num(const Num &other)
 {
-    valuePtr = new double;
-    *valuePtr = *other.valuePtr;
+    // can be written explicitly
+    // valuePtr = new double;
+    // *valuePtr = *other.valuePtr;
+
+    // or using this->
+    this->valuePtr = new double;
+    *this->valuePtr = *other.valuePtr;
 }
+
+//operator overloader for '=' 
+Num& Num::operator=(const Num &rhs)
+{
+    if(this == &rhs) {
+        return *this;
+    }
+
+        delete valuePtr;
+
+        valuePtr = new double;
+        *valuePtr = *rhs.valuePtr;
+
+        return *this;
+}
+
 
 //destructor
 Num::~Num()

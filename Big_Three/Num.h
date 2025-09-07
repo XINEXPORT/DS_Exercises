@@ -20,6 +20,9 @@ class Num {
         //setter
         void set(double newValue);
 
+        //Assignment Operator
+        Num &operator=(const Num &rhs);
+
     private: 
         double *valuePtr;
 };
