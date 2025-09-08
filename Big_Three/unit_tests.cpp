@@ -11,7 +11,6 @@ int main() {
 
     //call the test function
     test_constructor();
-    cout << "Default Constructor Test PASSED " << endl;
 
     return 0;
 }
@@ -21,4 +20,6 @@ void test_constructor(){
     Num my_list;
 
     assert(my_list.get() == 0);
+
+    cout << "Default Constructor Test PASSED " << endl;
 }
