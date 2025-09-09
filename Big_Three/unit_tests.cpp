@@ -51,7 +51,8 @@ void test_overloaded_constructor(){
 test_deep_copy_constructor
 Input: None
 Description: Testing the deep copy constructor
-Output:
+Output: The output should return true if the my_copy_list and
+        my_list having matching values
 */
 void test_deep_copy_constructor(){
     Num my_list(1);
