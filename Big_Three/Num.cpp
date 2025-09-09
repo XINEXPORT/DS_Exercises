@@ -15,7 +15,7 @@ Num::Num(double initialValue) {
 
 // copy constructor
 // allows for a deep copy
-Num::Num(const Num& other) {
+Num::Num(const Num &other) {
     // can be written explicitly
     // valuePtr = new double;
     // *valuePtr = *other.valuePtr;
