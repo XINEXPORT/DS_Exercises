@@ -31,5 +31,6 @@ class StringLinkedList {
         ElemType data;
         Node *next;
     };
+};
 
 #endif
