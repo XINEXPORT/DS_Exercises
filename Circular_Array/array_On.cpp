@@ -1,7 +1,7 @@
 // array_On.cpp
 // O(n) runtime
 
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 void print(char arr[], int numItems, int idx) {
