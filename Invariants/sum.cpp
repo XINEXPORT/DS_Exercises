@@ -1,9 +1,17 @@
+//sum.cpp
+
+using namespace std;
+
+int main(){
+    return 0;
+}
+
 double sum(double nums[], int len) {
 
     double result = 0.0;
 
     for (int i = 0; i < len; i++) {
-        result += num[i];
+        result += nums[i];
     }
     return result;
  }

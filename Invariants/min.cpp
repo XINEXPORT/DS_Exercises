@@ -1,3 +1,14 @@
+//min.cpp
+
+#include <cassert>
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    return 0;
+}
+
 double min(double nums[], int len){
     assert(len > 0); //error
     double result = nums[0];
