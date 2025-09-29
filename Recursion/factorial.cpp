@@ -3,7 +3,7 @@
 using namespace std;
 
 long factorial(int n) {
-    if(n == 0){
+    if (n == 0) {
         return 1;
     } else {
         cout << n * factorial(n - 1) << endl;
@@ -12,7 +12,7 @@ long factorial(int n) {
     }
 }
 
-int main(){
+int main() {
     long result = factorial(4);
     cout << "Factorial: " << result << endl;
     return 0;
