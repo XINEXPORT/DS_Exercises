@@ -30,4 +30,5 @@ int Point::get_y() {
 }
 
 Point Point::add(Point other) {
+    return Point(x + other.get_x(), y + other.get_y());
 }

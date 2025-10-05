@@ -25,3 +25,10 @@ int main(){
 
     return 0;
 }
+
+void print_rectangles(Rectangle rectangles[], int num_rectangles) {
+    for (int i = 0; i < num_rectangles; i++) {
+        rectangles[i].print();
+        cout << endl;
+    }
+}
