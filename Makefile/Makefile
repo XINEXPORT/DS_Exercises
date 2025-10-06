@@ -2,7 +2,7 @@ CXX = clang++
 CXXFLAGS = -g -Wall -Wextra
 LDFLAGS = -g
 
-final_prog: Point.o Rectangle.o main.o
+final_prog: format Point.o Rectangle.o main.o
 	${CXX} ${LDFLAGS} -o final_prog Point.o Rectangle.o main.o
 
 Point.o: Point.cpp Point.h
@@ -13,3 +13,7 @@ Rectangle.o: Rectangle.cpp Rectangle.h Point.h
 
 main.o: main.cpp Point.h Rectangle.h
 	${CXX} ${CXXFLAGS} -c main.cpp
+
+format:
+	clang-format -i *.cpp *.h
+	@echo "Formatting Complete ✅"

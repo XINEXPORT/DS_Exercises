@@ -8,7 +8,7 @@ class Point {
     Point(int x_coord, int y_coord);
     Point();
 
-    //getter
+    // getter
     int get_x();
     int get_y();
 

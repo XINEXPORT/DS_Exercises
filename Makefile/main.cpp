@@ -1,4 +1,4 @@
-//main.cpp
+// main.cpp
 
 #include <iostream>
 #include "Point.h"
@@ -8,10 +8,10 @@ using namespace std;
 
 void print_rectangles(Rectangle rectangles[], int num_rectangles);
 
-int main(){
-    //make an array of reactangles to play with
+int main() {
+    // make an array of reactangles to play with
 
-                              // rect 1
+    // rect 1
     Rectangle rectangles[3] = {Rectangle(Point(3, 4), Point(8, 15)),
                                // rect 2
                                Rectangle(Point(1, 20), Point(17, 22)),
