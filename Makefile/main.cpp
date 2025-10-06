@@ -18,7 +18,7 @@ int main(){
                                // rect 3
                                Rectangle(Point(30, 1), Point(40, 8))};
 
-    cout << "Here are the rectangles, print : " << endl;
+    cout << "Here are the rectangles, print: " << endl;
 
     print_rectangles(rectangles, 3);
     cout << endl;
