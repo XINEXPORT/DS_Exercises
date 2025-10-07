@@ -20,7 +20,7 @@ bool isLeaf(BinaryTreeNode *tree){
 }
 
 int numLeaves(BinaryTreeNode *tree) {
-    if(tree = nullptr) {
+    if(tree == nullptr) {
         return 0;
     } else if (isLeaf(tree)) {
         return 1;
@@ -31,5 +31,12 @@ int numLeaves(BinaryTreeNode *tree) {
 }
 
 int main(){
+    BinaryTreeNode n4 = {4, nullptr, nullptr};
+    BinaryTreeNode n3 = {3, &n4, nullptr};
+    BinaryTreeNode n2 = {2, nullptr, nullptr};
+    BinaryTreeNode n1 = {1, &n2, &n3};
+
+    cout << "Number of leaves in the tree: " << numLeaves(&n1) << endl;
+
     return 0;
 }
