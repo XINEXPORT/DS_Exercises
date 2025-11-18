@@ -1,9 +1,9 @@
-// naive.cpp
+// naiveShortestPath.cpp
 
 #include "dijkstra.h"
 
 /*
-naive
+naiveShortestPath
 a naive unweighted shortest path
 */
 void naiveShortestPath(Graph &g, int source) {
