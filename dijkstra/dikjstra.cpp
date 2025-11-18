@@ -22,7 +22,8 @@ void dijkstra(Graph &g, int source) {
 
     // create prio queue here
     priority_queue<pair<int, int>, vector<pair<int, int>>,
-                   greater<pair<int, int>>>Q;
+                   greater<pair<int, int>>>
+        Q;
 
     Q.push({0, source});
 
