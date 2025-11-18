@@ -8,6 +8,7 @@
 #ifndef DIJKSTRA_H
 #define DIJKSTRA_H
 
+typedef int ElemType;
 using namespace std;
 
 struct Vertex {
@@ -20,6 +21,13 @@ struct Vertex {
 struct Edge {
     int to;
     int weight;
+};
+
+struct Node {
+    ElemType data;
+    vector<Node *> children;
+    Node *parent;
+    int dist;
 };
 
 class Graph {
