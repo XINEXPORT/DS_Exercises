@@ -21,6 +21,22 @@ multi: typewriter the_typewriter
 	./the_typewriter 3_multiaction.txt 3_multiactionlogdemo.txt < 3_multiinput.txt
 	diff 3_multiactionlog.txt 3_multiactionlogdemo.txt
 
+#make all logs and diff
+all: nochange downarrow multi
+
+deldownarrow:
+	rm -f 2_snaptoendlog.txt 2_snaptoendlogdemo.txt
+
+delnochange:
+	rm -f 1_opendoclog.txt 1_opendoclogdemo.txt
+
+delmulti:
+	rm -rf 3_multiactionlog.txt 3_multiactionlogdemo.txt
+
+#delete all logs
+del: deldownarrow delnochange delmulti
+	rm -rf
+
 
 
 
