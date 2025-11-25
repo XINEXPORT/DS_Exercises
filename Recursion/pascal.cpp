@@ -16,10 +16,7 @@ int pascal(int row, int col){
     } else {
         return (pascal(row - 1, col - 1) + pascal(row - 1, col));
     }
-
-
-
-
+    
     return 1;
 }
 
