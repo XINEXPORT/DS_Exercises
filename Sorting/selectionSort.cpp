@@ -18,7 +18,7 @@ int indexOfMin(int values[], int from, int to) {
     int result = from;
 
     // testing against the elements of i to find the smallest
-    for (int i = from + 1; i < to; i++) { //O(n)
+    for (int i = from + 1; i < to; i++) {  // O(n)
         if (values[i] < values[result]) {
             result = i;
         }
@@ -28,19 +28,19 @@ int indexOfMin(int values[], int from, int to) {
 
 void selectionSort(int values[], int size) {
     // loop thru i
-    for (int i = 0; i < size - 1; i++) { //o(n)
+    for (int i = 0; i < size - 1; i++) {  // o(n)
         std::swap(values[i], values[indexOfMin(values, i, size)]);
     }
 }
 
-//recursive version
- void selectRecurse(int values[], int from, int to){
-     if(from >= to) return;
-     std::swap(values[from], values[indexOfMin(values, from, to)]);
-     selectRecurse(values, from + 1, to);
+// recursive version
+void selectRecurse(int values[], int from, int to) {
+    if (from >= to) return;
+    std::swap(values[from], values[indexOfMin(values, from, to)]);
+    selectRecurse(values, from + 1, to);
 }
 
-int main (){
+int main() {
     int values[] = {5, 4, 3, 2, 1};
     int size = 5;
 
